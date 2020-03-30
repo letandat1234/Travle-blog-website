@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Travel_Blog.Models.Blog>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.blogName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.blogDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.image)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.blogName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.blogDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.image)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.blogId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.blogId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.blogId })
+        </td>
+    </tr>
+}
+
+</table>

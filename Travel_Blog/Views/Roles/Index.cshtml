@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Travel_Blog.Models.Role>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.rank_)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rankName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.rank_)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.rankName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.roleId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.roleId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.roleId })
+        </td>
+    </tr>
+}
+
+</table>

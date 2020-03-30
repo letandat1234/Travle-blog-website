@@ -1,0 +1,42 @@
+﻿@model Travel_Blog.Models.Blog
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Blog</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.blogName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.blogName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.blogDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.blogDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.image)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.blogId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
