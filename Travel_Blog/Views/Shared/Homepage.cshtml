@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title> ✈ Travel Blog Website </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" src="/Assets/Client/font/font.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 400 15px/1.8 Lato, sans-serif;
+            color: #777;
+        }
+
+        h3, h4 {
+            margin: 10px 0 30px 0;
+            letter-spacing: 7px;
+            font-size: 20px;
+            color: #111;
+        }
+
+        .container {
+            padding: 80px 120px;
+        }
+
+        .person {
+            border: 0.5px solid transparent;
+            margin-bottom: 25px;
+            width: 100%;
+            height: 100%;
+            opacity: 1.5;
+        }
+
+            .person:hover {
+                border-color: #f1f1f1;
+            }
+
+
+        .carousel-inner img {
+            width: 100%;
+            margin: auto;
+        }
+
+        #img1 {
+            width: 1290px;
+            height: 700px;
+            margin: auto;
+        }
+
+        .carousel-caption h3 {
+            color: #fff !important;
+        }
+
+        .carousel-caption {
+            max-width: 600px;
+            display: none;
+        }
+
+        .bg-1 {
+            background: #2d2d30;
+            color: #bdbdbd;
+        }
+
+            .bg-1 h3 {
+                color: #fff;
+            }
+
+            .bg-1 p {
+                font-style: italic;
+            }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #f1f1f1;
+            border-radius: 0;
+            transition: .2s;
+        }
+
+            .btn:hover, .btn:focus {
+                border: 1px solid #333;
+                background-color: #fff;
+                color: #000;
+            }
+
+        .modal-header, h4, .close {
+            background-color: #333;
+            color: #fff !important;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .modal-header, .modal-body {
+            padding: 40px 50px;
+        }
+
+        .nav-tabs li a {
+            color: #777;
+        }
+
+        .navbar {
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 0;
+            background-color: #2d2d30;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 2px;
+            opacity: 0.9;
+        }
+
+            .navbar li a, .navbar .navbar-brand {
+                color: #d5d5d5 !important;
+            }
+
+        .navbar-nav li a:hover {
+            color: #fff !important;
+        }
+
+        .navbar-nav li.active a {
+            color: #fff !important;
+            background-color: #29292c !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+
+        .open .dropdown-toggle {
+            color: #fff;
+            background-color: #555 !important;
+        }
+
+        .dropdown-menu li a {
+            color: #000 !important;
+        }
+
+            .dropdown-menu li a:hover {
+                background-color: red !important;
+            }
+
+        footer {
+            width: 1290px;
+            height: 220px;
+            background-color: #2d2d30;
+            color: #f5f5f5;
+            padding: -20%;
+        }
+
+        .footer1 {
+            width: 100%;
+            float: left;
+            padding-top: -10%;
+        }
+
+        .fleft, .fright, .fcenter {
+            float: left;
+        }
+
+        .fright {
+            padding-top: 4%;
+            width: 25%;
+        }
+
+        .fleft {
+            padding-top: 4%;
+            width: 25%;
+        }
+
+        .fcenter {
+            width: 50%;
+            padding-top: 4%;
+        }
+
+        .up-arrow {
+            width: 1290px;
+            height: 20px;
+            float: center;
+        }
+
+        #find {
+            padding-top: 15px;
+        }
+
+        footer a {
+            color: #f5f5f5;
+        }
+
+            footer a:hover {
+                color: #777;
+                text-decoration: none;
+            }
+
+        .form-control {
+            border-radius: 0;
+            border-color: #777784;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .fa {
+            padding: 10px;
+            font-size: 25px;
+            width: 70px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 70%;
+        }
+
+            .fa:hover {
+                opacity: 0.5;
+            }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        #logo {
+            padding-bottom: 10px;
+            margin-top: -12px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+@RenderBody()
+<footer class="text-center" id="">
+
+    <div class="footer1">
+        <div class="fleft">
+            <p>© Copyright 2020 Travel blog Danang. </p>
+
+        </div>
+        <div class="fcenter">
+            <a href="#" class="fa fa-facebook">f</a>
+            <a href="#" class="fa fa-twitter">t</a>
+            <a href="#" class="fa fa-google">g</a>
+            <a href="#" class="fa fa-instagram">i</a>
+        </div>
+        <div class="fright">
+
+            <p>All rights reserved.</p>
+        </div>
+
+
+    </div>
+
+    <div class="up-arrow">
+        <a href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br><br>
+        <p> Made with <b style="color: red">♥</b> in Da Nang <a href="blog.html" data-toggle="tooltip" title="">  www.travellblog.html</a></p>
+    </div>
+
+
+</footer>
+</html>
