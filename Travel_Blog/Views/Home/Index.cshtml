@@ -1,0 +1,650 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Homepage.cshtml";
+}
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage"><img id="logo" src="/Assets/Client/image/Logo-Enclave.jpg" alt="logo" style="width:160px ; height: 55px;"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#myPage">TRANG CHỦ</a></li>
+                    <li><a href="#intro">GIỚI THIỆU</a></li>
+
+                    <li>
+                        <a href="#tour" data-toggle="modal" data-target="#myModal" id="login">ĐĂNG NHẬP</a>
+                    </li>
+                    <li>
+                        <a href="#tour" data-toggle="modal" data-target="#myModal" id="login">ĐĂNG BÀI</a>
+                    </li>
+                    <li><a href="#contact">LIÊN LẠC</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            NHIỀU HƠN
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li style="font-size: 13px;"><a href="#DDDL">ĐỊA ĐIỂM DU LỊCH HẤP DẪN TẠI ĐÀ NẴNG</a></li>
+                            <li style="font-size: 13px;"><a href="#ATDN">ẨM THỰC ĐÀ NẴNG</a></li>
+                            <li style="font-size: 13px;"><a href="#HDNB">HOẠT ĐỘNG NỔI BẬT </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <form id="find">
+                            <a href="#"><span class="glyphicon glyphicon-search"></span></a>
+                            <input type="text" placeholder="Search.." name="search">
+                        </form>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item active " id="img1">
+                <img src="/Assets/Client/image/danang-1.jpg" alt="New York" width="1100" height="600">
+                <div class="carousel-caption">
+                    <a href="#chuacau"><h3>Thành phố Đà Nẵng</h3></a>
+                    <p style="letter-spacing: 2px;"><b>Đà Nẵng được mệnh danh là thành phố đáng sống !!!</b></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="#chuacau"> <img src="/Assets/Client/image/ccau.jpg" alt="Chicago" maxwidth="1000" maxheight="600"></a>
+                <div class="carousel-caption">
+                    <a href="#chuacau"><h3> Cầu Chùa</h3></a>
+                    <p style="letter-spacing: 2px;"><b>Cầu Chùa là cây cầu cổ trong khu đô thị cổ Hội An, tỉnh Quảng Nam</b></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="/Assets/Client/image/bana2.jpg" alt="Los Angeles" maxwidth="1100" maxheight="600">
+                <div class="carousel-caption">
+                    <a href="#chuacau"><h3>Bà Nà Hills</h3></a>
+                    <p style="letter-spacing: 2px;"><b>Trạm đồi Bà Nà là một trạm đồi và khu nghỉ mát nằm ở dãy núi Trường Sơn phía tây thành phố Đà Nẵng</b></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Container (The Band Section) -->
+    <div id="intro" class="container text-center">
+        <h3 style="font-family: Times New Roman; font-size: 40px;"><b>THÀNH PHỐ ĐÀ NẴNG <b style="color: red">♥♥♥</b></b><span class="glyphicon glyphicon-heart" style="color: red"></span></h3>
+        <p><em>Chào mừng đến Đà Nẵng !</em></p>
+        <p>
+            Đà Nẵng thành phố ĐÁNG SỐNG !
+            Thành phố Đà Nẵng thuộc miền Trung của Việt Nam nằm giữa đất nước nên rất thuận tiện cho mọi người cả miền Bắc hoặc miền Nam di chuyển đến. Với vị trí tuyệt vời và kết hợp tham quan được cả Hội An và Huế bởi thế hàng năm thu hút hàng triệu du khách trong nước cũng như quốc tế đến tham quan du lịch. Đà Nẵng gồm 6 quận lớn đó là : Quận Hải Châu, Thanh Khê, Cẩm Lệ, Sơn Trà, Ngũ Hành Sơn và Liên Chiểu. Đây là 6 quận lớn nhất của thành phố Đà Nẵng và còn ở ngoại thành là 2 huyện Hòa Vang và huyện đảo Hoàng Sa. Hiện nay Đà Nẵng đã mở rộng thêm 2 quận Hòa Xuân và Hòa Quý.
+        </p>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Hội An</strong></p><br>
+                <a href="#demo" data-toggle="collapse">
+                    <img src="/Assets/Client/image/HoiAn.jpg" class="img-circle person" alt="Random Name" style=" width: 255px;  height:255px; ">
+                </a>
+                <div id="demo" class="collapse">
+                    <a href="gtha.html" target="_blank" style="text-decoration: none !important; color: #555; text-align: center;s ">
+                        <p>Đôi nét giới thiệu </p>
+                        <p>về Phố Cổ </p>
+                        <p>Hội An</p>
+                    </a>
+                    <a href="gtha.html" target="_blank" style="text-decoration: none !important; font-size: 15px; color: gray"><b><p><<<----- Đọc thêm ----->>></p></b></a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Bà Nà Hills</strong></p><br>
+                <a href="#demo2" data-toggle="collapse">
+                    <img src="/Assets/Client/image/Banahills.jpg" class="img-circle person" alt="Random Name" style=" width: 255px;  height:255px; ">
+                </a>
+                <div id="demo2" class="collapse">
+                    <a href="gtbn.html" target="_blank" style="text-decoration: none !important; color: #555;">
+                        <p>Lịch Sử Bà Nà Hill</p>
+                        <p>và những điều</p>
+                        <p>bí ẩn</p>
+                    </a>
+                    <a href="gtbn.html" target="_blank" style="text-decoration: none !important; font-size: 15px; color: gray"><b><p><<<----- Đọc thêm ----->>></p></b></a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Núi Ngũ Hành Sơn</strong></p><br>
+                <a href="#demo3" data-toggle="collapse">
+                    <img src="/Assets/Client/image/NguHanhSon.jpg" class="img-circle person" alt="Random Name" style=" width: 255px;  height:255px; ">
+                </a>
+                <div id="demo3" class="collapse">
+                    <a href="gtnhs.html" target="_blank" style="text-decoration: none !important; color: #555;">
+                        <p>Lịch sử và giới thiệu </p>
+                        <p> về Danh Thắng </p>
+                        <p>Ngũ Hành Sơn</p>
+                    </a>
+                    <a href="gtnhs.html" target="_blank" style="text-decoration: none !important; font-size: 15px; color: gray"><b><p><<<----- Đọc thêm ----->>></p></b></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid bg-3 text-center">
+        <strong><h3 class="margin" style="font-size: 32px ;text-align: center;"><b>BẠN MUỐN ĐẾN NƠI NÀO TIẾP THEO? </b></h3></strong>
+        <p style="text-align: center;"><em>Asia Park là một lựa chọn tốt để bạn vui chơi,giải trí cùng gia đình với nhiều trò chơi ,hoạt động khác nhau!</em></p>
+        <br>
+        <div class="row">
+            <div class="col-sm-6">
+
+                <img src="/Assets/Client/image/ASIApark.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+
+                <em>Sun Wheel – Vòng quay mặt trời ở công viên Châu Á Đà Nẵng</em>
+                <a href="cvasia.html" target="_blank" style="text-decoration: none !important;"><p style="text-align: center; color: black; font-size: 24px;">  <b>Kinh nghiệm đi Công Viên Châu Á (Asia Park) Đà Nẵng 2020</b></p></a> <br>
+                <a href="cvasia.html" target="_blank"><button class="btn"><b><p style="word-spacing: 2px; letter-spacing: 1px;font-family: Montserrat, sans-serif;padding-top: 5px;font-size: 13px;">Đọc thêm</p>  </b> </button></a>
+            </div>
+
+
+            <div id="map" style="width:500px;height:500px;" class="col-sm-2">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.5243785326415!2d108.22595295008284!3d16.038256044473705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219e7a191cc17%3A0xe60f91d4055e3074!2sAsia%20Park%20-%20Sun%20World%20Da%20Nang%20Wonders!5e0!3m2!1sen!2s!4v1583479790926!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid bg-3 text-center" id="DDDL">
+        <strong><h3 class="margin" style="font-size: 29px"><b>ĐỊA ĐIỂM DU LỊCH HẤP DẪN TẠI ĐÀ NẴNG</b></h3></strong>
+        <p><em>Rất nhiều địa điểm du lịch hấp dẫn đang chờ bạn!</em></p>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+
+                <a href="bdst.html" target="_blank"><img src="/Assets/Client/image/LinhUng.jpg" class="img-responsive margin" style="width:117%; height: 250px;" alt="Image"></a>
+                <a href="bdst.html" target="_blank" style="text-decoration: none !important;">
+                    <p style="text-align: left;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #009580;font-size: 22px; padding-top: 12px; font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;">Kinh Nhiệm du lịch bán đảo Sơn Trà Đà Nẵng</p>
+                </a>
+                <p style="text-align: left; font-size: 12px;">12/01/2018</p>
+                <p style="text-align: left;">Được mệnh danh với những cái tên mỹ miều như “lá phổi xanh”, “viên ngọc quý”… của Đà Nẵng, Bán đảo Sơn Trà đã và đang trở thành...</p>
+                <a href="bdst.html" target="_blank"><button class="btn"><b><p style="word-spacing: 2px; letter-spacing: 1px;font-family: Montserrat, sans-serif;padding-top: 5px;font-size: 13px;">Đọc thêm</p>  </b> </button></a>
+            </div>
+            <div class="col-sm-4" id="chuacau">
+
+                <img src="/Assets/Client/image/ccau.jpg" class="img-responsive margin" style="width:100%;height: 250px;" alt="Image">
+                <a href="  " style="text-decoration: none !important;">
+                    <p style="text-align: left;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #009580;font-size: 22px; padding-top: 12px; font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;">Du lịch Hội An ( Đà Nẵng - Quảng Nam ): Cẩm nang từ A đến Z</p>
+                </a>
+                <p style="text-align: left; font-size: 12px;">13:48 07/08/2019</p>
+                <p style="text-align: left;">Nổi bật trong cung đường du lịch miền Trung, phố cổ Hội An như một bức tranh mộc mạc, giản dị và nên thơ. Dù là ngày hay đêm, du lịch...</p>
+                <button class="btn"><b><p style="word-spacing: 2px; letter-spacing: 1px;font-family: Montserrat, sans-serif;padding-top: 5px;font-size: 13px;">Đọc thêm</p>  </b> </button>
+            </div>
+            <div class="col-sm-4">
+
+                <img src="/Assets/Client/image/thantai.jpg" class="img-responsive margin" style="width:100% ;height: 250px;" alt="Image">
+                <a href="  " style="text-decoration: none !important;">
+                    <p style="text-align: left;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #009580;font-size: 22px; padding-top: 12px; font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;">Kinh nghiệm đi du lịch suối khoáng nóng núi thần tài</p>
+                </a>
+                <p style="text-align: left; font-size: 12px;"> 28/6/2019</p>
+                <p style="text-align: left;">Khi đến suối khoáng nóng núi thần tài, bạn không cần phải lo lắng vì làn da khô sau khi ngâm mình trong nước biển, ngược lại bạn sẽ được cảm nhận sự tươi trẻ,</p>
+                <button class="btn"><b><p style="word-spacing: 2px; letter-spacing: 1px;font-family: Montserrat, sans-serif;padding-top: 5px;font-size: 13px;">Đọc thêm</p>  </b> </button>
+            </div>
+
+        </div>
+    </div>
+    <br><hr>
+    <div class="container-fluid bg-3 text-center">
+
+        <div class="row">
+            <div class="col-sm-4">
+
+                <img src="/Assets/Client/image/NUINHS.png" class="img-responsive margin" style="width:100%;height: 260px;" alt="Image">
+                <a href="  " style="text-decoration: none !important;">
+                    <p style="text-align: left;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #009580;font-size: 22px; padding-top: 12px; font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;">Địa điểm vui chơi ở công viên Châu Á (Asia Park) Đà Nẵng</p>
+                </a>
+                <p style="text-align: left; font-size: 12px;">21/07/2019</p>
+                <p style="text-align: left;">Đà Nẵng – Điểm hẹn mùa hè là sự kiện du lịch thường niên của thành phố Đà Nẵng. chương trình sẽ diễn ra từ ngày 14/6 đến 19/6 ...</p>
+                <button class="btn"><b><p style="word-spacing: 2px; letter-spacing: 1px;font-family: Montserrat, sans-serif;padding-top: 5px;font-size: 13px;">Đọc thêm</p>  </b> </button>
+            </div>
+            <div class="col-sm-4">
+
+                <img src="/Assets/Client/image/suoihoa.jpg" class="img-responsive margin" style="width:100%;height: 260px;" alt="Image">
+                <a href="  " style="text-decoration: none !important;">
+                    <p style="text-align: left;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #009580;font-size: 22px; padding-top: 12px; font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;">Địa điểm vui chơi ở công viên Châu Á (Asia Park) Đà Nẵng</p>
+                </a>
+                <p style="text-align: left; font-size: 12px;">21/07/2019</p>
+                <p style="text-align: left;">Đà Nẵng – Điểm hẹn mùa hè là sự kiện du lịch thường niên của thành phố Đà Nẵng. chương trình sẽ diễn ra từ ngày 14/6 đến 19/6 ...</p>
+                <button class="btn"><b><p style="word-spacing: 2px; letter-spacing: 1px;font-family: Montserrat, sans-serif;padding-top: 5px;font-size: 13px;">Đọc thêm</p>  </b> </button>
+            </div>
+            <div class="col-sm-4">
+
+                <img src="/Assets/Client/image/bana3.jpg" class="img-responsive margin" style="width:100%;height: 260px;" alt="Image">
+                <a href="  " style="text-decoration: none !important;">
+                    <p style="text-align: left;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #009580;font-size: 22px; padding-top: 12px; font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;">Cẩm Nang Du Lịch Bà Nà Hills – Đà Nẵng Từ A Tới Z Mới Nhất</p>
+                </a>
+                <p style="text-align: left; font-size: 12px;"> 28/10/2016</p>
+                <p style="text-align: left;">Bà Nà Hills là điểm du lịch đầy hấp dẫn của thành phố Đà Nẵng. Đã từ lâu, “ngọn đồi” này được xem là “con át chủ bài” thu hút hàng ngàn lượt khách ...</p>
+                <button class="btn"><b><p style="word-spacing: 2px; letter-spacing: 1px;font-family: Montserrat, sans-serif;padding-top: 5px;font-size: 13px;">Đọc thêm</p>  </b> </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+    <div class="container-fluid bg-3 text-center" id="ATDN">
+        <strong><h3 class="margin" style="font-size: 29px"><b>ẨM THỰC ĐÀ NẴNG </b></h3></strong>
+        <p><em> Mê mẩn các món ngon và ẩm thực Đà Nẵng !</em></p>
+
+        <div class="row">
+            <div class="col-sm-4">
+
+                <a href=" "><img src="/Assets/Client/image/Banhxeo.jpg" class="img-responsive margin" style="width:110%; height: 250px;" alt="Image"></a>
+                <a href="  " style="text-decoration: none !important;">
+                    <p style="text-align: left;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #009580;font-size: 22px; padding-top: 12px; font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;">Địa điểm vui chơi ở công viên Châu Á (Asia Park) Đà Nẵng</p>
+                </a>
+                <p style="text-align: left; font-size: 12px;">21/07/2019</p>
+                <p style="text-align: left;">Đà Nẵng – Điểm hẹn mùa hè là sự kiện du lịch thường niên của thành phố Đà Nẵng. chương trình sẽ diễn ra từ ngày 14/6 đến 19/6 ...</p>
+                <button class="btn"><b><p style="word-spacing: 2px; letter-spacing: 1px;font-family: Montserrat, sans-serif;padding-top: 5px;font-size: 13px;">Đọc thêm</p>  </b> </button>
+            </div>
+            <div class="col-sm-4" id="chuacau">
+
+                <img src="/Assets/Client/image/HaisanĐN.jpg" class="img-responsive margin" style="width:100% ;height: 250px;" alt="Image">
+                <a href="  " style="text-decoration: none !important;">
+                    <p style="text-align: left;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #009580;font-size: 22px; padding-top: 12px; font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;">Địa điểm vui chơi ở công viên Châu Á (Asia Park) Đà Nẵng</p>
+                </a>
+                <p style="text-align: left; font-size: 12px;">21/07/2019</p>
+                <p style="text-align: left;">Đà Nẵng – Điểm hẹn mùa hè là sự kiện du lịch thường niên của thành phố Đà Nẵng. chương trình sẽ diễn ra từ ngày 14/6 đến 19/6 ...</p>
+                <button class="btn"><b><p style="word-spacing: 2px; letter-spacing: 1px;font-family: Montserrat, sans-serif;padding-top: 5px;font-size: 13px;">Đọc thêm</p>  </b> </button>
+            </div>
+            <div class="col-sm-4">
+
+                <img src="/Assets/Client/image/miquangech.jpg" class="img-responsive margin" style="width:100%;height: 250px;" alt="Image">
+                <a href="  " style="text-decoration: none !important;">
+                    <p style="text-align: left;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #009580;font-size: 22px; padding-top: 12px; font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;">Địa điểm vui chơi ở công viên Châu Á (Asia Park) Đà Nẵng</p>
+                </a>
+                <p style="text-align: left; font-size: 12px;">21/07/2019</p>
+                <p style="text-align: left;">Đà Nẵng – Điểm hẹn mùa hè là sự kiện du lịch thường niên của thành phố Đà Nẵng. chương trình sẽ diễn ra từ ngày 14/6 đến 19/6 ...</p>
+                <button class="btn"><b><p style="word-spacing: 2px; letter-spacing: 1px;font-family: Montserrat, sans-serif;padding-top: 5px;font-size: 13px;">Đọc thêm</p>  </b> </button>
+            </div>
+
+        </div>
+    </div>
+    <br><hr>
+    <div class="container-fluid bg-3 text-center" id="HDNB">
+        <strong><h3 class="margin" style="font-size: 29px" id="act"><b> HOẠT ĐỘNG NỔI BẬT </b></h3></strong>
+        <p><em>Khám phá những hoạt động nổi bật, thú vị tại Đà Nẵng</em></p>
+
+        <div class="row">
+            <div class="col-sm-4">
+
+                <a href=" "><img src="/Assets/Client/image/LehoiphaohoaĐN.jpg" class="img-responsive margin" style="width:110%; height: 250px;" alt="Image"></a>
+                <a href="  " style="text-decoration: none !important;">
+                    <p style="text-align: left;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #009580;font-size: 22px; padding-top: 12px; font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;">Địa điểm vui chơi ở công viên Châu Á (Asia Park) Đà Nẵng</p>
+                </a>
+                <p style="text-align: left; font-size: 12px;">21/07/2019</p>
+                <p style="text-align: left;">Đà Nẵng – Điểm hẹn mùa hè là sự kiện du lịch thường niên của thành phố Đà Nẵng. chương trình sẽ diễn ra từ ngày 14/6 đến 19/6 ...</p>
+                <button class="btn"><b><p style="word-spacing: 2px; letter-spacing: 1px;font-family: Montserrat, sans-serif;padding-top: 5px;font-size: 13px;">Đọc thêm</p>  </b> </button>
+            </div>
+            <div class="col-sm-4" id="chuacau">
+
+                <img src="/Assets/Client/image/LehoikhinhkhicauĐN.jpg" class="img-responsive margin" style="width:100%; height: 250px;" alt="Image">
+                <a href="  " style="text-decoration: none !important;">
+                    <p style="text-align: left;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #009580;font-size: 22px; padding-top: 12px; font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;">Địa điểm vui chơi ở công viên Châu Á (Asia Park) Đà Nẵng</p>
+                </a>
+                <p style="text-align: left; font-size: 12px;">21/07/2019</p>
+                <p style="text-align: left;">Đà Nẵng – Điểm hẹn mùa hè là sự kiện du lịch thường niên của thành phố Đà Nẵng. chương trình sẽ diễn ra từ ngày 14/6 đến 19/6 ...</p>
+                <button class="btn"><b><p style="word-spacing: 2px; letter-spacing: 1px;font-family: Montserrat, sans-serif;padding-top: 5px;font-size: 13px;">Đọc thêm</p>  </b> </button>
+            </div>
+            <div class="col-sm-4">
+
+                <a href="dhmh.html" target="_blank"><img src="/Assets/Client/image/danang.jpg" class="img-responsive margin" style="width:100%; height: 250px;" alt="Image"></a>
+                <a a href="dhmh.html" target="_blank" style="text-decoration: none !important;">
+                    <p style="text-align: left;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #009580;font-size: 22px; padding-top: 12px; font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;">Những Hoạt Động Nổi Bật Tại Đà Nẵng – Điểm Hẹn Mùa Hè 2019</p>
+                </a>
+                <p style="text-align: left; font-size: 12px;">07/03/2019</p>
+                <p style="text-align: left;">Đà Nẵng – Điểm hẹn mùa hè là sự kiện du lịch thường niên của thành phố Đà Nẵng. chương trình sẽ diễn ra từ ngày 14/6 đến 19/6 ...</p>
+                <a href="dhmh.html" target="_blank"><button class="btn"><b><p style="word-spacing: 2px; letter-spacing: 1px;font-family: Montserrat, sans-serif;padding-top: 5px;font-size: 13px;">Đọc thêm</p>  </b> </button></a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4><span class="glyphicon glyphicon-plane"></span> Đăng nhập </h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="usrname" style=" font-family: Montserrat;font-size: 16px !important; word-spacing: -8px !important;letter-spacing: 1,5px !important;color:#777784"><span class="glyphicon glyphicon-user"> <b>Email hoặc tài khoản</b>  </span></label>
+                            <input type="text" name="myForm2" onsubmit="return validateForm2()" method="post" required class="form-control" id="usrname" placeholder="Nhập email hoặc tài khoản">
+
+                            <script>
+                                function validateForm2() {
+                                    var x = document.forms["myForm2"].value;
+                                    if (x == "" || x == null) {
+                                        alert("Name must be filled out");
+                                        return false;
+                                    }
+                                }
+                            </script>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="usrname" style=" font-family: Montserrat;font-size: 16px !important; word-spacing: -8px !important;letter-spacing: 1,5px !important;color:#777784;"><span class="glyphicon glyphicon-lock"> <b>Mật khẩu</b>  </span></label>
+                            <input type="password" class="form-control" placeholder="Nhập mật khẩu" maxlength="8" value="" id="myInput4" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number , one uppercase , lowercase letter, and and up to 8 characters " required>
+
+
+
+                        </div>
+                        <label style=" font-family: Montserrat;font-size: 13px !important; word-spacing:  1px !important;letter-spacing: 1,5px !important;color:#777777">
+                            <input type="checkbox" name="remember">  <b>Nhớ mật khẩu</b>
+                        </label>
+                        <br>
+                        <a href="blog.html" style=" font-family: Montserrat;font-size: 13px !important; word-spacing:  3px !important;letter-spacing: -1px !important;> <button type="submit" class="btn btn-block">
+                            Đăng nhập
+                            <span class="glyphicon glyphicon-ok"></span>
+                            </button>
+                        </a>
+                        <br>
+                        <a href="" data-toggle="modal" data-target="#Register" style=" font-family: Montserrat;font-size: 13px !important; word-spacing:  3px !important;letter-spacing: -1px !important;><button type="submit" class="btn btn-block">
+                            Đăng kí <span class="glyphicon glyphicon-ok"></span>
+
+                            </button>
+                        </a>
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                    <p> <a href="#" data-toggle="modal" data-target="#fgpassword" style="text-decoration: none; color:#777777 ; font-family: Montserrat;font-size: 14px !important; word-spacing:  1px !important;letter-spacing: 1,5px !important;"><b>Quên mật khẩu ?</b></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Register" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4><span class="glyphicon glyphicon-user"></span> Đăng kí </h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <h3 style="font-family: Montserrat;font-size: 25px !important; word-spacing:  3px !important;letter-spacing: -1px !important;">Tạo tài khoản</h3>
+
+                            <label for="usrname" style=" font-family: Montserrat;font-size: 15px !important; word-spacing:  -8px !important;letter-spacing: 1,5px !important; "><span class="glyphicon glyphicon-envelope"><b> Email </b>  </span></label>
+                            <input type="text" name="myForm1" onsubmit="return validateForm1()" method="post" required class="form-control" id="usrname" placeholder="Tên người dùng
+                                                  gmail.com">
+
+                            <script>
+                                function validateForm1() {
+                                    var x = document.forms["myForm1"].value;
+                                    if (x == "" || x == null) {
+                                        alert("Name must be filled out");
+                                        return false;
+                                    }
+                                }
+                            </script>
+                        </div>
+                        <div class="form-group">
+
+                            <label for="psw" style=" font-family: Montserrat;font-size: 15px !important; word-spacing:  -8px !important;letter-spacing: 1,5px !important;"> <span class="glyphicon glyphicon-lock"><b> Mật khẩu</b> </span> </label>
+                            <input class="form-control" placeholder="Nhập mật khẩu " maxlength="8" type="password" value="" id="myInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase, lowercase letter, and up to 8 characters " required>
+
+                            <p style=" font-family: Montserrat;font-size: 13px !important; word-spacing:  1px !important;letter-spacing: 1,5px !important;color:#777784"> <input type="checkbox" onclick="myFunction()">  <b>Hiện mật khẩu </b></p>
+
+                            <script>
+                                function myFunction() {
+                                    var x = document.getElementById("myInput");
+                                    if (x.type === "password") {
+                                        x.type = "text";
+                                    } else {
+                                        x.type = "password";
+                                    }
+                                }
+                            </script>
+                        </div>
+                        <div class="form-group">
+                            <label for="psw" style=" font-family: Montserrat;font-size: 15px !important; word-spacing:  -8px !important;letter-spacing: 1,5px !important;">
+                                <span class="glyphicon glyphicon-ok"> <b> Xác nhận</b> </span>
+                            </label>
+                            <input type="password" class="form-control" value="" id="myInput1" placeholder="Xác nhận mật khẩu" maxlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number , one uppercase , lowercase letter, and and up to 8 characters " required>
+
+                            <p style=" font-family: Montserrat;font-size: 13px !important; word-spacing:  1px !important;letter-spacing: 1,5px !important;color:#777784"> <input type="checkbox" onclick="myFunction1()">  <b>Hiện mật khẩu </b></p>
+                            <script>
+                                function myFunction1() {
+                                    var x = document.getElementById("myInput1");
+                                    if (x.type === "password") {
+                                        x.type = "text";
+                                    } else {
+                                        x.type = "password";
+                                    }
+                                }
+                            </script>
+                        </div>
+                        <label>
+                            <p style="  font-family: Montserrat !important;font-size: 13px !important; word-spacing:  3px !important;letter-spacing: -1px !important;color:#777784" " > <input type="checkbox" name="remember">
+                                Bằng cách tạo một tài khoản, bạn đồng ý với chúng tôi
+                                <a href="#" style="  font-family: Montserrat;font-size: 14px !important; word-spacing:  3px !important;letter-spacing: -1px !important;color:dodgerblue">Điều khoản và  quyền riêng tư</a>.
+                            </p>
+                        </label>
+
+                        <br>
+                        <a href="blog.html">
+                            <button type="submit" class="btn btn-block">
+                                Đăng kí
+                            </button>
+                        </a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="fgpassword">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4><span class="glyphicon glyphicon-user"></span> Quên mật khẩu </h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <h3 style="font-family: Montserrat;font-size: 25px !important; word-spacing:  3px !important;letter-spacing: -1px !important;"> Tạo mật khẩu mới </h3>
+
+                            <label for="usrname" style=" font-family: Montserrat;font-size: 16px !important; word-spacing:  -8px !important;letter-spacing: 1,5px !important;"><span class="glyphicon glyphicon-envelope"> <b>Email</b>   </span></label>
+                            <input type="text" name="myForm" action="" onsubmit="return validateForm()" method="post" required class="form-control" id="usrname" placeholder="Tài khoản người dùng
+                                      gmail.com">
+                            <script>
+                                function validateForm() {
+                                    var x = document.forms["myForm"].value;
+                                    if (x == "" || x == null) {
+                                        alert("Name must be filled out");
+                                        return false;
+                                    }
+                                }
+                            </script>
+
+                        </div>
+                        <div class="form-group">
+
+                            <label for="psw" style=" font-family: Montserrat;font-size: 16px !important; word-spacing:  -8px !important;letter-spacing: 1,5px !important;"><span class="glyphicon glyphicon-lock"> <b>Mật khẩu mới</b></span> </label>
+                            <input class="form-control" id="myInput2" placeholder="Mật khẩu mới" maxlength="8" type="password" value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number , one uppercase , lowercase letter, and and up to 8 characters" required>
+
+
+                            <p style=" font-family: Montserrat;font-size: 13px !important; word-spacing:  1px !important;letter-spacing: 1,5px !important;color:#777784"> <input type="checkbox" onclick="myFunction2()">  <b>Hiện mật khẩu </b></p>
+
+                            <script>
+                                function myFunction2() {
+                                    var x = document.getElementById("myInput2");
+                                    if (x.type === "password") {
+                                        x.type = "text";
+                                    } else {
+                                        x.type = "password";
+                                    }
+                                }
+                            </script>
+                        </div>
+                        <div class="form-group">
+                            <label for="psw" style=" font-family: Montserrat;font-size: 16px !important; word-spacing:  -8px !important;letter-spacing: 1,5px !important;"><span class="glyphicon glyphicon-ok"> <b> Xác nhận</b> </span> </label>
+                            <input type="password" class="form-control" placeholder="Xác nhận mật khẩu" id="myInput3" maxlength="8" value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number , one uppercase , lowercase letter, and and up to 8 characters" required>
+                            <p style=" font-family: Montserrat;font-size: 13px !important; word-spacing:  1px !important;letter-spacing: 1,5px !important;color:#777784"> <input type="checkbox" onclick="myFunction3()">  <b>Hiện mật khẩu </b></p>
+
+                            <script>
+                                function myFunction3() {
+                                    var x = document.getElementById("myInput3");
+                                    if (x.type === "password") {
+                                        x.type = "text";
+                                    } else {
+                                        x.type = "password";
+                                    }
+                                }
+                            </script>
+                        </div>
+
+
+                        <a href="blog.html" style=" font-family: Montserrat;font-size: 13px !important; word-spacing:  3px !important;letter-spacing: -1px !important;> <button type="submit" class="btn btn-block">
+                            Đăng nhập
+
+                            </button>
+                        </a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container">
+        <h3 class="text-center">LIÊN LẠC</h3>
+        <p class="text-center"><em>Chào mừng đến trang web của tôi</em></p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <p>Thông tin liên hệ .</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Viet Nam, Da Nang</p>
+                <p><span class="glyphicon glyphicon-phone"></span> Điện thoại: 0921117282</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> Email: datltgcd17091@gmail.com</p>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Tên" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Bình luận" rows="5"></textarea>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <!-- Image of location/map -->
+    <img src="/Assets/Client/image/map.jpg" class="img-responsive" style="width:100%; height: 450px;">
+
+    <!-- Footer -->
+
+
+    <script>
+        $(document).ready(function () {
+
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        })
+    </script>
+
+</body>
