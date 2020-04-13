@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title> Du lịch Hội An: Cẩm nang từ A đến Z </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+    width: 1210px;
+  }
+h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 3px;      
+    font-size: 25px;
+    color: #111;
+  }
+  
+  p{
+    text-decoration: none;
+    font-size: 20px;
+  }
+  a{
+    text-decoration: none;
+  
+  }
+ 
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+     
+  }
+ .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+ 
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+ .row1{
+  width: 850px;
+
+  margin-left: -16px;
+  float: left;
+ }
+ .row2{
+  width: 910px;
+
+  margin-left: 210px;
+  float: left;
+ }
+ .row{
+  width: 860px;
+  float: left;
+ }
+footer {
+    width: 1290px;
+    height: 220px;
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: -20%;
+  }
+
+.footer1{
+
+  width: 100%;
+  float: left;
+  padding-top: -10%;
+
+}
+.fleft ,.fright,.fcenter{
+    float: left;
+}
+ .fright{
+    padding-top: 4%;
+    width: 25%;
+}
+.fleft{
+   padding-top: 4%;
+    width: 25%; 
+}
+.fcenter{
+    width: 50%;
+    padding-top: 4%; 
+}
+
+.up-arrow{
+  width: 1290px;
+  height: 20px;
+  float:center;
+}
+#find{
+  padding-top: 15px;
+}
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+    border-color: #777784;
+
+  }
+  textarea {
+    resize: none;
+    width: 830px !important;
+  }
+
+.fa {
+  padding: 10px;
+  font-size: 25px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+#logo{
+  padding-bottom: 10px;
+  margin-top: -12px;
+padding-left: 20px;
+}
+
+.col-sm-8 .content-column{
+
+width: 108% !important;
+
+}
+.content{
+  width: 106%;
+ padding-left: 216px;
+
+}
+
+.entry-content {
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: inherit;
+    text-transform: initial;
+    color: #2c2f34;
+}
+.entry-content {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    padding-bottom: 20px;
+}
+
+h1{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 200px;
+    color: #333333;
+    font-size: 57px;
+    text-align: justify;
+    padding-left:5px; 
+    width: 820px;
+    height: 150px;
+}
+hr{
+   color: #444444 ;
+  font-size: 90px;
+  border-top: 5px solid #444444;
+  width: 820px;
+}
+
+#more {display: none;}
+
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="blog.html"><img id="logo" src="image/Logo-Enclave.jpg" alt="logo" style="width:160px ; height: 55px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="blog.html">TRANG CHỦ</a></li>
+        <li><a href="blog.html">GIỚI THIỆU</a></li>
+      
+        <li><a href="#tour" data-toggle="modal" data-target="#myModal" id="login">ĐĂNG NHẬP</a>
+        </li>
+             <li><a href="#tour" data-toggle="modal" data-target="#myModal" id="login">ĐĂNG BÀI</a>
+        </li> 
+          
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">NHIỀU HƠN
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li style="font-size: 13px;"><a href="blog.html">ĐỊA ĐIỂM DU LỊCH HẤP DẪN TẠI ĐÀ NẴNG</a></li>
+            <li style="font-size: 13px;"><a href="blog.html">ẨM THỰC ĐÀ NẴNG</a></li>
+            <li style="font-size: 13px;"><a href="blog.html">HOẠT ĐỘNG NỔI BẬT </a></li> 
+          </ul>
+        </li>
+        <li>       
+    <form id="find" >
+      <a href="#"><span class="glyphicon glyphicon-search"></span></a>
+      <input type="text" placeholder="Search.." name="search">
+    </form>
+ </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+      <div class=" " id=""> 
+        <img src="image/ccau.jpg" alt="New York" width="1300" height="650" style="padding-top: 50px;">
+
+           
+      </div>
+
+      
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">    
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-plane"></span> Đăng nhập </h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+              <div class="form-group">
+              <label for="usrname" style=" font-family: Montserrat;font-size: 16px !important; word-spacing: -8px !important;letter-spacing: 1,5px !important;color:#777784"><span class="glyphicon glyphicon-user" > <b>Email hoặc tài khoản</b>  </span></label>
+              <input type="text" name="myForm2"  onsubmit="return validateForm2()" method="post" required   class="form-control" id="usrname" placeholder="Nhập email hoặc tài khoản" >
+
+              <script>
+              function validateForm2() {
+                var x = document.forms["myForm2"].value;
+                if (x == "" || x == null) {
+                  alert("Name must be filled out");
+                  return false;
+                }
+              }
+              </script> 
+
+            </div>
+            <div class="form-group">
+              <label for="usrname" style=" font-family: Montserrat;font-size: 16px !important; word-spacing: -8px !important;letter-spacing: 1,5px !important;color:#777784;"><span class="glyphicon glyphicon-lock" > <b>Mật khẩu</b>  </span></label>
+              <input type="password" class="form-control"  placeholder="Nhập mật khẩu" maxlength="8" value="" id="myInput4" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number , one uppercase , lowercase letter, and and up to 8 characters " required>
+
+           
+              
+            </div>
+            <label style=" font-family: Montserrat;font-size: 13px !important; word-spacing:  1px !important;letter-spacing: 1,5px !important;color:#777777;" >
+               <input type="checkbox"  name="remember">  <b>Nhớ mật khẩu</b>
+              </label>
+          <br>
+             <a href="blog.html" style=" font-family: Montserrat;font-size: 13px !important; word-spacing:  3px !important;letter-spacing: -1px !important;> <button type="submit" class="btn btn-block"> Đăng nhập
+                 <span class="glyphicon glyphicon-ok"></span>
+              </button></a> 
+              <br>
+              <a href=""data-toggle="modal" data-target="#Register" style=" font-family: Montserrat;font-size: 13px !important; word-spacing:  3px !important;letter-spacing: -1px !important;><button type="submit" class="btn btn-block" > Đăng kí <span class="glyphicon glyphicon-ok"></span>
+
+              </button>  </a>
+              
+              
+          </form>
+        </div>
+        <div class="modal-footer">
+         
+          <p> <a href="#" data-toggle="modal" data-target="#fgpassword" style="text-decoration: none; color:#777777 ; font-family: Montserrat;font-size: 14px !important; word-spacing:  1px !important;letter-spacing: 1,5px !important;"><b>Quên mật khẩu ?</b></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <div class="modal fade" id="Register" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-user"></span> Đăng kí </h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+              <div class="form-group">
+                <h3 style="font-family: Montserrat;font-size: 25px !important; word-spacing:  3px !important;letter-spacing: -1px !important;">Tạo tài khoản</h3>
+
+              <label for="usrname" style=" font-family: Montserrat;font-size: 15px !important; word-spacing:  -8px !important;letter-spacing: 1,5px !important; "><span class="glyphicon glyphicon-envelope" ><b> Email </b>  </span></label>
+              <input type="text" name="myForm1"  onsubmit="return validateForm1()" method="post" required  class="form-control" id="usrname" placeholder="Tên người dùng                                                          
+                                                  @gmail.com">
+
+              <script>
+              function validateForm1() {
+                var x = document.forms["myForm1"].value;
+                if (x == "" || x == null) {
+                  alert("Name must be filled out");
+                  return false;
+                }
+              }
+              </script>                                                  
+            </div>
+            <div class="form-group">
+             
+              <label for="psw" style=" font-family: Montserrat;font-size: 15px !important; word-spacing:  -8px !important;letter-spacing: 1,5px !important;"> <span class="glyphicon glyphicon-lock"><b> Mật khẩu</b> </span> </label>
+              <input  class="form-control"  placeholder="Nhập mật khẩu " maxlength="8" type="password" value="" id="myInput"   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase, lowercase letter, and up to 8 characters " required > 
+                 
+               <p  style=" font-family: Montserrat;font-size: 13px !important; word-spacing:  1px !important;letter-spacing: 1,5px !important;color:#777784;" > <input  type="checkbox" onclick="myFunction()">  <b>Hiện mật khẩu </b></p>
+
+              <script>
+              function myFunction() {
+                var x = document.getElementById("myInput");
+                if (x.type === "password") {
+                  x.type = "text";
+                } else {
+                  x.type = "password";
+                }
+              }
+              </script>
+            </div>
+              <div class="form-group">
+              <label for="psw"  style=" font-family: Montserrat;font-size: 15px !important; word-spacing:  -8px !important;letter-spacing: 1,5px !important;">
+                <span class="glyphicon glyphicon-ok"> <b> Xác nhận</b> </span> </label>
+              <input type="password" class="form-control" value="" id="myInput1" placeholder="Xác nhận mật khẩu"maxlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number , one uppercase , lowercase letter, and and up to 8 characters " required>
+            
+                  <p  style=" font-family: Montserrat;font-size: 13px !important; word-spacing:  1px !important;letter-spacing: 1,5px !important;color:#777784;" > <input  type="checkbox" onclick="myFunction1()">  <b>Hiện mật khẩu </b></p>
+            <script>
+            function myFunction1() {
+              var x = document.getElementById("myInput1");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }
+            </script>  
+            </div>        
+ <label>
+        <p  style="  font-family: Montserrat !important;font-size: 13px !important; word-spacing:  3px !important;letter-spacing: -1px !important;color:#777784"" > <input type="checkbox" name="remember" > 
+           Bằng cách tạo một tài khoản, bạn đồng ý với chúng tôi
+       <a href="#" style="  font-family: Montserrat;font-size: 14px !important; word-spacing:  3px !important;letter-spacing: -1px !important;color:dodgerblue">Điều khoản và  quyền riêng tư</a>.</p>
+    </label>
+    
+               <br>
+              <a href="blog.html"><button type="submit" class="btn btn-block" >Đăng kí
+              </button></a>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="fgpassword" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-user"></span> Quên mật khẩu </h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+              <div class="form-group">
+                <h3 style="font-family: Montserrat;font-size: 25px !important; word-spacing:  3px !important;letter-spacing: -1px !important;"> Tạo mật khẩu mới </h3>
+
+              <label for="usrname"  style=" font-family: Montserrat;font-size: 16px !important; word-spacing:  -8px !important;letter-spacing: 1,5px !important;"><span class="glyphicon glyphicon-envelope" > <b>Email</b>   </span></label>
+              <input type="text" name="myForm" action="" onsubmit="return validateForm()" method="post" required class="form-control" id="usrname" placeholder="Tài khoản người dùng                                                           
+                                      @gmail.com">
+              <script>
+              function validateForm() {
+                var x = document.forms["myForm"].value;
+                if (x == "" || x == null) {
+                  alert("Name must be filled out");
+                  return false;
+                }
+              }
+              </script>
+
+            </div>
+            <div class="form-group">
+   
+              <label for="psw" style=" font-family: Montserrat;font-size: 16px !important; word-spacing:  -8px !important;letter-spacing: 1,5px !important;"><span class="glyphicon glyphicon-lock"> <b>Mật khẩu mới</b></span> </label>
+              <input class="form-control" id="myInput2" placeholder="Mật khẩu mới" maxlength="8" type="password" value=""  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number , one uppercase , lowercase letter, and and up to 8 characters" required>
+            
+                
+              <p  style=" font-family: Montserrat;font-size: 13px !important; word-spacing:  1px !important;letter-spacing: 1,5px !important;color:#777784" > <input  type="checkbox" onclick="myFunction2()">  <b>Hiện mật khẩu </b></p>
+
+<script>
+function myFunction2() {
+  var x = document.getElementById("myInput2");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+            </div>
+              <div class="form-group">
+              <label for="psw"  style=" font-family: Montserrat;font-size: 16px !important; word-spacing:  -8px !important;letter-spacing: 1,5px !important;"><span class="glyphicon glyphicon-ok"> <b> Xác nhận</b> </span> </label>
+              <input type="password" class="form-control"  placeholder="Xác nhận mật khẩu" id="myInput3" maxlength="8"  value=""  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number , one uppercase , lowercase letter, and and up to 8 characters" required>
+                        <p  style=" font-family: Montserrat;font-size: 13px !important; word-spacing:  1px !important;letter-spacing: 1,5px !important;color:#777784" > <input  type="checkbox" onclick="myFunction3()">  <b>Hiện mật khẩu </b></p>
+
+<script>
+function myFunction3() {
+  var x = document.getElementById("myInput3");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+            </div>
+         
+
+               <a href="blog.html" style=" font-family: Montserrat;font-size: 13px !important; word-spacing:  3px !important;letter-spacing: -1px !important;> <button type="submit" class="btn btn-block"> Đăng nhập
+                 
+              </button></a> 
+          </form>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+
+
+
+<br>
+
+
+       
+ <div class="content">
+ 
+
+<div class="col-sm-8 content-column">
+              <div class="single-container">
+          <h1 class="post-title title title-large entry-title">Du lịch Hội An: Cẩm nang từ A đến Z </h1>
+ <p style="text-align: left; font-size: 15px;"> <b style="color: blue">By Admin </b> - 13/11/2019</p>
+          
+                <p style="text-align: justify; width: 820px;">
+Nổi bật trong cung đường du lịch miền Trung, phố cổ Hội An như một bức tranh mộc mạc, giản dị và nên thơ. Dù là ngày hay đêm, du lịch Hội An vẫn mang trong mình những vẻ đẹp lôi cuốn khác nhau.
+</p>
+               <p style="text-align: justify; width: 820px;">
+Ngoài những giá trị văn hoá qua kiến trúc đa dạng, Hội An còn lưu giữ một nền tảng văn hoá phi vật thể khá đồ sộ. Cuộc sống thường nhật của cư dân với những phong tục tập quán, sinh hoạt tín ngưỡng, nghệ thuật dân gian, lễ hội văn hoá cùng với cảnh quan thiên nhiên thơ mộng, các món ăn đặc sản… làm cho Hội An ngày càng hấp dẫn du khách thập phương.
+</p>
+       <div class="entry-content clearfix single-post-content">
+                     <p>
+                      
+                     <img src="image/hz.jpg" alt="" width="820px" height="570">
+                      <p style="text-align: center; font-size: 20px;padding-left: 100px;"><em>Vẻ đẹp lôi cuốn của Hội An. </em></p>
+                    
+
+                  </p><br>
+<div class="crp_related  ">
+ 
+  <ul>
+    <li style="text-align: justify;width: 600px; font-size: 20px;">
+      <a href="">
+        <span class="crp_title">Sự kiện tại công viên Châu Á (Asia Park) dịp lễ 2/9…</span></a>
+      </li>
+      <li style="text-align: justify;width: 600px; font-size: 20px;">
+        <a href="">
+          <span class="crp_title">Hướng dẫn tham quan công viên Hitachi Seaside Park cụ thể</span>
+        </a>
+      </li>
+      <li style="text-align: justify;width: 600px; font-size: 20px;">
+        <a href="">
+          <span class="crp_title">Những công viên giải trí lớn nhất ở châu Âu đẹp, nổi tiếng</span>
+        </a>
+      </li>
+      <li style="text-align: justify;width: 600px; font-size: 20px;">
+        <a href="">
+          <span class="crp_title">Kinh nghiệm ăn chơi ở công viên văn hóa Đầm Sen kèm giá vé</span>
+        </a>
+      </li>
+      <li style="text-align: justify;width: 600px; font-size: 20px;">
+              <a href="gtha.html" target="_blank">
+        <span class="crp_title">Đôi nét giới thiệu về Phố Cổ Hội An</span></a>
+      </li>
+      
+  </ul>
+  <br>
+  </div>
+ 
+     <b style="text-align: justify; width: 820px;font-size: 23px; color:#081B5F; ">Lên lịch du lịch Hội An</b>
+                    <br><br>  
+  
+
+ <p style="text-align: justify; width: 820px;">
+Thời điểm du lịch Hội An tuyệt nhất là từ tháng 2 đến tháng 4 hàng năm, trời ít mưa, khí hậu dễ chịu. Tránh đi vào mùa hè vì nhiệt độ tăng cao, rất oi bức. Mùa mưa từ tháng 10 – tháng 11 cũng có nhược điểm là không gian ẩm ướt do mưa nhiều và nặng hạt.
+</p> <br>
+ <p style="text-align: justify; width: 820px;">
+Bạn hãy đến thăm Hội An vào ngày 14, rằm âm lịch hàng tháng để tham dự đêm phố cổ. Vào dịp này bạn sẽ có cơ hội được tận mắt nhìn ngắm những chiếc đèn lồng đỏ rực giăng khắp phố, một khung cảnh đặc trưng của Hội An vào dịp lễ.
+</p> <br>
+
+<p><img src="image/hz1.jpg" alt="" width="820px" height="570"></p>
+<p style="text-align: center; font-size: 21px;padding-left: 100px;"><em>Hội An lung linh trong đêm.</em></p>
+<br>
+
+<b style="text-align: justify; width: 820px;font-size: 25px; color:#081B5F; ">Những điểm du lịch không thể bỏ qua khi du lịch Hội An</b>
+<br><br> 
+<b style="text-align: justify; width: 820px;font-size: 23px; color:#081B5F; ">Những điểm đến trong phạm vi phố cổ Hội An</b>
+<br><br>  
+<b style="text-align: justify; width: 820px;font-size: 21px; color:#081B5F; ">Chùa Cầu</b>
+<br><br>  
+
+
+ <p style="text-align: justify; width: 820px;">
+Chùa Cầu là viên ngọc giữa lòng Hội An. Cầu xây dựng vào cuối thế kỷ 16 và được gọi là cầu Nhật Bản. Ở giữa cầu có một ngôi miếu nhỏ thờ Huyền Thiên Đại Đế. Cầu có mái che khá độc đáo cùng các kết cấu, họa tiết trang trí thể hiện sự kết hợp hài hòa giữa các phong cách kiến trúc Việt, Hoa, Nhật, và cả phương Tây.
+</p>
+ <p style="text-align: justify; width: 820px;">
+Vị trí: Cầu bắc ngang con lạch chảy ra sông Thu Bồm giáp ranh giữa hai đường Nguyễn Thị Minh Khai và Trần Phú.
+</p>
+  
+<p><img src="image/hz2.jpg" alt="" width="820px" height="570"></p>
+<p style="text-align: center; font-size: 20px;padding-left: 100px;"><em>Chùa Cầu</em></p>
+<br>
+
+<b style="text-align: justify; width: 820px;font-size: 21px; color:#081B5F; ">Hội quán Phúc Kiến</b>
+<br><br>  
+ <p style="text-align: justify; width: 820px;">
+Tương truyền, tiền thân của Hội quán là một gian miếu nhỏ thờ pho tượng Thiên Hậu Thánh Mẫu (bà chúa phù hộ cho thương nhân vượt sóng gió đại dương) vớt được tại bờ biển Hội An vào năm 1697. Qua nhiều lần trùng tu, với sự đóng góp chủ yếu của Hoa Kiều bang Phúc Kiến, hội quán càng trở nên rực rỡ, khang trang góp phần tô điểm diện mạo kiến trúc đô thị cổ Hội An.</p>
+<br>
+<b style="text-align: justify; width: 820px;font-size: 21px; color:#081B5F; ">Hội quán Triều Châu</b>
+<br><br>  
+ <p style="text-align: justify; width: 820px;">
+Hội quán được Hoa Kiều bang Triều Châu xây dựng vào năm 1845 để thờ Phục Ba tướng quân Mã Viện – vị thần giỏi chế ngự sóng gió giúp cho việc đi lại buôn bán trên biển được thuận buồm xuôi gió, đắc lợi. Hội quán có giá trị đặc biệt về kết cấu kiến trúc với bộ khung gỗ chạm trỗ tinh xảo, cùng những họa tiết, hương án trang trí bằng gỗ và những tác phẩm đắp nổi bằng sành sứ tuyệt đẹp.</p>
+<br>
+<b style="text-align: justify; width: 820px;font-size: 21px; color:#081B5F; ">Hội quán Quảng Đông</b>
+<br><br>  
+ <p style="text-align: justify; width: 820px;">
+Hội quán được Hoa Kiều Quảng Đông xây dựng vào năm 1885, thoạt đầu để thờ Thiên Hậu Thánh Mẫu và Đức Khổng Tử, sau năm 1911 chuyển sang thờ Quan Công và Tiền Hiền của bang. Sự sử dụng hợp lý các chất liệu gỗ, đá trong kết cấu chịu lực, chi tiết trang trí đã đem lại cho Hội quán vẻ đẹp đường bệ, riêng có. Hàng năm vào ngày Nguyên Tiêu, vía Quan Công (24 tháng 6 Âm lịch) tại đây diễn ra lễ hội rất linh đình thu hút nhiều người tham gia.</p>
+<br>
+
+ <p><img src="image/hz3.jpg" alt="" width="820px" height="570"></p>
+<p style="text-align: center; font-size: 20px;padding-left: 100px;"><em>Hội quán Quảng Đông nhìn từ bên ngoài.</em></p>
+<br>
+
+<b style="text-align: justify; width: 820px;font-size: 21px; color:#081B5F; ">Nhà thờ Tộc Trần</b>
+<br><br>  
+ <p style="text-align: justify; width: 820px;">
+Nhà thờ Tộc Trần do một vị quan họ Trần (một dòng họ lớn từ Trung Hoa di cư đến Hội An vào những năm 1700) xây dựng năm 1802 theo những nguyên tắc phong thuỷ truyền thống của người Trung Hoa và người Việt. Tọa lạc trên một khu đất rộng khoảng 1500 m2, có nhiều hạng mục: nhà thờ tự ông bà và trưng bày các di vật liên quan đến dòng họ, nhà ở… Nhà thờ cổ tộc Trần Hội An là nhà thờ cổ mang phong cách nhà thờ tộc của người Việt từ ngàn xưa còn nguyên vẹn hình thể kiến trúc cổ.</p>
+<br>
+
+
+<b style="text-align: justify; width: 820px;font-size: 24px; color:#081B5F; ">Bảo tàng Lịch sử – Văn hóa</b> <br><br>
+<p style="text-align: justify; width: 820px;">
+ Được thành lập vào năm 1989, bảo tàng trưng bày 212 hiện vật gốc và tư liệu có giá trị bằng gốm, sứ, đồng sắt, giấy, gỗ… phản ánh các giai đoạn phát triển của đô thị – thương cảng Hội An từ thời kỳ văn hoá Sa Huỳnh (từ thế kỷ thứ 2 sau Công Nguyên) đến thời kỳ văn hoá Chăm (từ thế kỷ 2 đến thế kỷ 15) và văn hoá Đai Việt, Đại Nam (từ thế kỷ 15 đến thế kỷ 19).
+</p>
+
+<b style="text-align: justify; width: 820px;font-size: 21px; color:#081B5F; "> Nhà Cổ Tấn Ký</b> <br><br>
+<p style="text-align: justify; width: 820px;">
+ Ðược xây dựng cách đây gần 200 năm, nhà Tấn Ký có kiểu kiến trúc đặc trưng của nhà phố Hội An với nội thất chia làm nhiều gian, mỗi gian có chức năng riêng. Mặt tiền nhà là nơi để mở cửa hiệu buôn bán, mặt sau thông với bến sông để làm nơi xuất nhập hàng hóa.
+</p>
+<p style="text-align: justify; width: 820px;">
+Nhà được xây dựng bởi những loại vật liệu truyền thống và được tạo tác bởi những thợ mộc, nề địa phương nên vừa mang dáng nét riêng, nhanh nhẹn, thanh thoát, ấm cúng, vừa thể hiện sự giao lưu với các phong cách kiến trúc trong khu vực. Ngày 17 tháng 2 năm 1990, nhà Tấn Ký đã được cấp bằng Di tích Lịch sử – Văn hóa Quốc gia.
+</p>
+ <img class="" src=image/hz4.jpg alt="" width="820px" height="570"  ></p>
+  <p style="text-align: center; font-size: 20px;padding-left: 100px;"><em>Nhà cổ Tấn Ký.</em></p>
+   <span id="dots"> 
+</span>
+<span id="more"> 
+
+<b style="text-align: justify; width: 820px;font-size: 21px; color:#081B5F; "> Xưởng thủ công mỹ nghệ Hội An</b> <br><br>
+<p style="text-align: justify; width: 820px;">
+ Xưởng quy tụ hầu hết các ngành nghề thủ công truyền thống của Hội An và Quảng Nam như dệt chiếu, dệt vải, gốm, sơn mài… Vào thăm xưởng, du khách sẽ tìm thấy khung cảnh thanh bình êm ả của một hình ảnh làng quê Việt Nam; được tận mắt chứng kiến đôi bàn tay khéo léo và kỹ năng tuyệt vời của các nghệ nhân, tạo nên những sản phẩm mỹ nghệ tinh xảo và đặc sắc. Du khách có thể tham gia một vài khâu trong quá trình sản xuất của các nghề và mua một vài sản phẩm về làm kỷ niệm.
+</p>
+
+<b style="text-align: justify; width: 820px;font-size: 23px; color:#081B5F; ">Một số điểm tham quan phải di chuyển xa</b> <br><br>
+<b style="text-align: justify; width: 820px;font-size: 21px; color:#081B5F; ">Biển Cửa Đại</b> <br><br>
+<p style="text-align: justify; width: 820px;">
+Cửa Đại là một bãi tắm đẹp, có bãi cát trắng mịn, nước trong xanh, sóng nhỏ và rất sẵn các quán hải sản tươi ngon với giá rẻ. Đến biển Cửa Đại vào buổi tối cũng rất tuyệt bởi lúc ấy bãi biển mênh mông, lung linh dưới những ngọn đèn dầu lãng mạn.
+</p> <br>
+ <img class="" src=image/hz5.jpg alt="" width="820px" height="570"  ></p>
+  <p style="text-align: center; font-size: 20px;padding-left: 100px;"><em>Vẻ đẹp của biển Cửa Đại.</em></p>
+
+<b style="text-align: justify; width: 820px;font-size: 21px; color:#081B5F; ">Ngoạn cảnh sông Thu Bồn</b> <br><br>
+<p style="text-align: justify; width: 820px;">
+Bạn có thể tham gia một tour đi ghe dọc sông Thu Bồn. Hai bên bờ sông có những cồn cát tuyệt đẹp, cảnh đồng ruộng, núi non đẹp như tranh vẽ. Đặc biệt, hoàng hôn trên sông Thu Bồn có thể khiến mọi du khách phải xao lòng.
+</p> <br
+
+ <img class="" src=image/hz6.jpg alt="" width="820px" height="570"  ></p>
+  <p style="text-align: center; font-size: 20px;padding-left: 100px;"><em>Hoàng hôn trên sông Thu Bồn.</em></p>
+
+
+  <b style="text-align: justify; width: 820px;font-size: 21px; color:#081B5F; "> Làng Gốm Thanh Hà</b> <br><br>
+<p style="text-align: justify; width: 820px;">
+Vào thế kỷ 16, 17, Thanh Hà là một ngôi làng rất thịnh đạt, nổi tiếng về các mặt hàng gốm, đất nung được trao đổi, bán buôn khắp các tỉnh miền Trung Việt Nam. Nghề gốm của làng có nguồn gốc xuất xứ từ Thanh Hóa, sau khi tiếp thu được một số vốn liếng kỹ thuật thì đã hình thành làng gốm như ngày nay. Sản phẩm chủ yếu là các đồ dùng phục vụ đời sống sinh hoạt hàng ngày như chén, bát, chum, vại, bình hoa, chậu cảnh, hình thù các con giống… mang nhiều kiểu dáng, màu sắc rất phong phú và đặc biệt nhẹ hơn so với các sản phẩm cùng loại của địa phương khác.</p>
+ <img class="" src=image/hz7.jpg alt="" width="820px" height="570"  ></p>
+  <p style="text-align: center; font-size: 20px;padding-left: 100px;"><em>Du khách thích thú với trải nghiệm tập làm gốm tại làng gốm Thanh Hà. </em></p>
+
+
+<b style="text-align: justify; width: 820px;font-size: 25px; color:#081B5F; "> Ẩm thực của du lịch Hội An</b> <br><br>
+<b style="text-align: justify; width: 820px;font-size: 25px; color:#081B5F; "> Cơm gà Phố Hội</b> <br><br>
+
+<p style="text-align: justify; width: 820px;">
+Với tất cả sự khéo kéo tỉ mỉ trong cách chế biến, người Hội An đã tạo ra một món cơm gà đủ tạo dấu ấn để người ta cho nó một cái tên riêng: Cơm gà phố Hội. Cơm gà phố Hội ăn với hành tây, đu đủ chua, rau thơm Trà Quế, còn có một chén súp trộn tim, gan, cật gà ăn kèm càng tăng thêm phần hấp dẫn.
+</p>
+
+ <img class="" src=image/hz8.jpg alt="" width="820px" height="570"  ></p>
+  <p style="text-align: center; font-size: 20px;padding-left: 100px;"><em>Món cơm gà phố Hội.</em></p>
+  <b style="text-align: justify; width: 820px;font-size: 21px; color:#081B5F; ">Cao Lầu</b> <br><br>
+<p style="text-align: justify; width: 820px;">
+Nhiều người dân sống lâu năm ở phố cổ nói cao lầu xuất hiện ở Hội An từ thế kỷ 17. Có lẽ vì thế mà món này chịu ảnh hưởng khá nhiều từ ẩm thực của người Hoa cũng như món mì lạnh Udon của người Nhật. Tuy vậy, cao lầu Hội An vẫn mang đậm nét riêng và duy chỉ có Hội An mới có món Cao Lầu đúng chất.</b>  </p>
+ <img class="" src=image/hz9.jpg alt="" width="820px" height="570"  ></p>
+  <p style="text-align: center; font-size: 20px;padding-left: 100px;"><em>Món Cao Lầu</em></p>
+  <b style="text-align: justify; width: 820px;font-size: 21px; color:#081B5F; ">Bánh bao, bánh vạc</b> <br><br>
+<p style="text-align: justify; width: 820px;">
+Bánh bao – bánh vạc là hai loại bánh có nguyên liệu cách làm gần giống nhau, thường ăn chung trên một đĩa bánh. Khác là nhân bánh vạc được làm từ tôm đất giã nhuyễn trộn với một ít tiêu, tỏi, hành, sả cùng những gia vị bí truyền. Nhân bánh bao được làm từ thịt heo, nấm mèo, hành lá thái mỏng rồi cũng xào cùng gia vị bí truyền đó. Có lẽ phần gia vị này cũng là một nguyên nhân khiến bánh bao – bánh vạc chỉ có thể ăn ngon khi ở Hội An.</p>
+ <img class="" src=image/hz10.jpg alt="" width="820px" height="570"  ></p>
+  <p style="text-align: center; font-size: 20px;padding-left: 100px;"><em>Bánh bao, bánh vạc</em></p>
+    <b style="text-align: justify; width: 820px;font-size: 21px; color:#081B5F; ">Bánh bèo Hội An</b> <br><br>
+<p style="text-align: justify; width: 820px;">
+Để làm bánh bèo, người ta chọn loại gạo ngon, nhân bánh bèo là tôm, thịt. Khách vào quán, người chủ sắp nhiều chén bánh lên khay, múc nhân đổ vào, thêm dầu mỡ, tương ớt, hành thơm rồi bày lên bàn. Ăn bánh bèo phải dùng đến “dao tre”, đó là một thanh tre vót hình lưỡi dao. Kiểu ăn như thế cũng gợi bao sự hiếu kỳ cho khách và là lối ẩm thực khác biệt giữa bánh bèo với các món ngon Hội An khác được chế tác bằng gạo.</p>
+ <img class="" src=image/hz11.jpg alt="" width="820px" height="570"  ></p>
+  <p style="text-align: center; font-size: 20px;padding-left: 100px;"><em>Bánh bèo Hội An</em></p>
+      <b style="text-align: justify; width: 820px;font-size: 21px; color:#081B5F; ">Bánh xèo Hội An</b> <br><br>
+<p style="text-align: justify; width: 820px;">
+Bánh xèo Hội An là đặc sản chính hiệu của vùng đất phố Hội. Nguyên liệu chính để làm bánh xèo ngoài gạo, còn có thêm tôm, thịt. Để đúc nên món bánh xèo người làm phải ngồi bên bếp lửa liên tục rất nóng nực, do đó mùa mưa trong năm từ tháng 10 đến tháng 12 là mùa thích hợp nhất cho việc làm bánh xèo ở Hội An.</p>
+ <img class="" src=image/hz12.jpg alt="" width="820px" height="570"  ></p>
+  <p style="text-align: center; font-size: 20px;padding-left: 100px;"><em>Bánh xèo Hội An. </em></p>
+
+<b style="text-align: justify; width: 820px;font-size: 25px; color:#081B5F; ">Ở đâu khi du lịch Hội An?</b>
+<br><br> 
+
+<p style="text-align: justify; width: 820px;">
+Là thành phố du lịch, đặc biệt thu hút du khách nước ngoài nên Hội An không thiếu các khách sạn tiện nghi, ngay trung tâm thành phố giá phòng khá cao, nhưng khó có phòng trống. Du khách nên đặt phòng trước ít nhất 2 tháng để có giá tốt. Vào mùa cao điểm, nếu đặt muộn có thể tìm phòng xa khu trung tâm như đường Huỳnh Thúc Kháng, đoạn gần bến xe, đường Thái Phiên.</p>
+<br> 
+<p style="text-align: justify; width: 820px;">
+ Một số khách sạn Hội An được yêu thích</p>
+<br>
+
+<b style="text-align: justify; width: 820px;font-size: 19px; color:#236BAA; ">Khu nghỉ dưỡng Four Seasons The Nam Hải Hội An</b>
+<br><br> 
+
+ <img class="" src=image/hz13.jpg alt="" width="820px" height="570"  ></p>
+  
+<b style="text-align: justify; width: 820px;font-size: 19px; color:#236BAA; ">Vinpearl Resort & Golf Nam Hội An</b>
+<br><br> 
+
+ <img class="" src=image/hz14.jpg alt="" width="820px" height="570"  ></p>
+
+ <b style="text-align: justify; width: 820px;font-size: 19px; color:#236BAA; ">Khu nghỉ dưỡng Victoria Hội An Beach Resort & Spa</b>
+<br><br> 
+
+ <img class="" src=image/hz15.png alt="" width="820px" height="570"  ></p>
+    <b style="text-align: justify; width: 820px;font-size: 19px; color:#236BAA; ">Khu nghỉ dưỡng Hội An Beach</b>
+<br><br> 
+
+ <img class="" src=image/hz16.jpg alt="" width="820px" height="570"  ></p>
+  <b style="text-align: justify; width: 820px;font-size: 19px; color:#236BAA; ">Khu nghỉ dưỡng Almanity Hội An Wellness</b>
+<br><br> 
+
+ <img class="" src=image/hz17.jpg alt="" width="820px" height="570"  ></p>
+
+
+  <br>
+
+</span>
+
+<button style=" margin-left: 350px;" class="btn"  onclick="myFunction5()" id="myBtn" >Read more</button> <br>
+ <script>
+function myFunction5() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<br>
+
+<hr>
+
+
+
+  
+<div class="container-fluid bg-3 text-center">    
+ 
+ 
+
+  </div>
+  <div class="row1">
+    <h3 style="margin-left: 15px; "> Bạn có thể quan tâm</h3>
+    <div class="col-sm-4">
+         <a href="dhmh.html" target="_blank"><img src="image/danang2.jpg" class="img-responsive margin" 
+        style="width:100%; height: 200px; " alt="Image"></a>
+       <a href="dhmh.html" target="_blank" style="text-decoration: none !important;"><p style="text-align: justify;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #1D1D1D;font-size: 17px; padding-top: 12px; font-family: inherit;font-weight: 500;line-height: 1.1;"><b>Những Hoạt Động Nổi Bật Tại Đà Nẵng – Điểm Hẹn Mùa Hè 2019</b> </p></a>
+     
+    </div>
+   <div class="col-sm-4">
+         <a href="gtha.html" target="_blank"><img src="image/ha9.jpg" class="img-responsive margin" 
+        style="width:100%; height: 200px; " alt="Image"></a>
+       <a href="gtha.html"target="_blank" style="text-decoration: none !important;"><p style="text-align: justify;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #1D1D1D;font-size: 17px; padding-top: 12px; font-family: inherit;font-weight: 500;line-height: 1.1;"><b> Đôi nét giới thiệu về Phố Cổ Hội An</b> </p></a>
+     
+    </div>
+    <div class="col-sm-4"> 
+
+      <a href="gtnhs.html" target="_blank"><img src="image/NguHanhSon.jpg" class="img-responsive margin" style="width:100%;height: 200px;" alt="Image"></a>
+     <a href="gtnhs.html" target="_blank"  style="text-decoration: none !important;"><p style="text-align: justify;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #1D1D1D;font-size: 17px; padding-top: 12px; font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;"><b>Lịch sử và giới thiệu về Danh Thắng Ngũ Hành Sơn</b> </p></a>
+    </div>
+  </div>
+   <br>
+  
+  <div class="row1">
+    
+    <div class="col-sm-4">
+         <a href=" "><img src="image/LinhUng.jpg" class="img-responsive margin" 
+        style="width:100%; height: 200px; " alt="Image"></a>
+       <a href="  " style="text-decoration: none !important;"><p style="text-align: justify;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #1D1D1D;font-size: 17px; padding-top: 12px; font-family: inherit;font-weight: 500;line-height: 1.1;"><b>Địa điểm vui chơi ở công viên Châu Á (Asia Park) Đà Nẵng</b> </p></a>
+     
+    </div>
+    <div class="col-sm-4">
+         <a href="gtbn.html" target="_blank"><img src="image/Banahills.jpg" class="img-responsive margin" 
+        style="width:100%; height: 200px; " alt="Image"></a>
+       <a href="gtbn.html"target="_blank" style="text-decoration: none !important;"><p style="text-align: justify;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #1D1D1D;font-size: 17px; padding-top: 12px; font-family: inherit;font-weight: 500;line-height: 1.1;"><b>Lịch Sử Bà Nà Hill và những điều bí ẩn chưa một ai biết đến</b> </p></a>
+     
+    </div>
+  <div class="col-sm-4">
+         <a href="dhmh.html" target="_blank"><img src="image/danang2.jpg" class="img-responsive margin" 
+        style="width:100%; height: 200px; " alt="Image"></a>
+       <a href="dhmh.html" target="_blank" style="text-decoration: none !important;"><p style="text-align: justify;  word-break: break-word;word-spacing: normal;word-wrap: break-word; color: #1D1D1D;font-size: 17px; padding-top: 12px; font-family: inherit;font-weight: 500;line-height: 1.1;"><b>Những Hoạt Động Nổi Bật Tại Đà Nẵng – Điểm Hẹn Mùa Hè 2019</b> </p></a>
+     
+    </div>
+  </div>
+</div>
+
+</div>
+
+            </div>
+   </div>
+
+<hr style="  color: #444444 ;font-size: 90px; border-top: 5px solid #444444;
+  width: 830px;margin-left: 224px;">
+  <div class="row2">
+  
+    <div class="col-md-8">
+      <div class="row">
+        <p style="margin-left: 20px; color:#444444">Your email address will not be published.</p>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Tên" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input  style="color: black; " class="form-control" id="Email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="Bình luận" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                  
+
+
+  <img src="image/hz18.jpg" alt="New York" width="1300" height="560">
+       <a href="#myPage" style="text-decoration: none;color:#777784; "><p style="letter-spacing: 2px;text-align: center; float: center;padding-left: 100px;"><b>    Du lịch Hội An: Cẩm nang từ A đến Z </b></p>
+</a>
+
+ 
+ 
+
+</div>
+
+<footer class="text-center"   id="">
+ 
+<div class="footer1">
+    <div class="fleft" >
+     <p>© Copyright 2020 Travel blog Danang. </p>
+
+    </div>
+    <div class="fcenter">
+      <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-instagram"></a>
+    </div>
+    <div  class="fright" >
+       
+<p>All rights reserved.</p> </div>
+
+
+</div>
+
+ <div class="up-arrow"><a  href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span style="font-size: 23px;"class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p> Made with <b style="color: red">♥</b> in Da Nang  <a href="blog.html" data-toggle="tooltip" title="">  www.travellblog.html</a></p></div>
+        
+   
+</footer>
+
+<script>
+$(document).ready(function(){
+  
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
